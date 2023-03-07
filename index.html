@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Counter</title>
+</head>
+<body>
+    <script>
+        days =+ prompt("Enter you date of Birth");
+        month = prompt("Enter your Month of Birth \n Write The First Letter Capital \n Write in Words");
+        years =+ prompt("Enter your Year of Birth");
+        full = alert("So You Were Born On " + days +" "+ month +" " + years)
+        if(month == "January"){
+            var m_n = 1
+        }
+        else if(month == "February"){
+            var m_n = 2
+        }
+        else if(month == "March"){
+            var m_n = 3
+        }
+        else if(month == "April"){
+            var m_n = 4
+        }
+        else if(month == "May"){
+            var m_n = 5
+        }
+        else if(month == "June"){
+            var m_n = 6
+        }
+        else if(month == "July"){
+            var m_n = 7
+        }
+        else if(month == "August"){
+            var m_n = 8
+        }
+        else if(month == "September"){
+            var m_n = 9
+        }
+        else if(month == "Octuber"){
+            var m_n = 10
+        }
+        else if(month == "November"){
+            var m_n = 11
+        }
+        else if(month == "December"){
+            var m_n = 12
+        }
+        else{
+            alert("You may be Entering short Name Write the Full Name of The Month \n Write the first letter CAPITAL")
+        }
+        var full_years =+ 2023 - years
+        var full_days =+ full_years*365 + m_n*30
+        alert("You have lived " + full_years + " years")
+        alert("You have lived " + full_days + " days")
+    </script>
+</body>
+</html>
